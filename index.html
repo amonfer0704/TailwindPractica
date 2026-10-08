@@ -4,51 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameStore</title>
-    <link href="./src/output.css" rel="stylesheet">
+    <!--CSS generado por Tailwind-->
+    <link href="./dist/output.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <h1>GameStore</h1>
-        <nav>
+<!--Fondo gris muy oscuro, texto blanco y tipo de letra sans-->
+<body class="bg-gray-900 text-white font-sans">
+    <!--Flex para los elementos en fila, justify between para que cada elemento esté uno a la izquierda
+    y otro a la derecha, color de fondo morado y padding-->
+    <header class="flex items-center justify-between bg-purple-700 p-4">
+        <!--Letra grande y en negrita-->
+        <h1 class="text-2xl font-bold">GameStore</h1>
+        <!--Enlaces en fila y separados los unos de los otros, de color lila claro-->
+        <nav class="flex gap-4 text-purple-200">
             <a href="#juegos">Juegos</a>
             <a href="#ofertas">Ofertas</a>
             <a href="#contacto">Contacto</a>
         </nav>
     </header>
-    <main>
-        <section>
-            <h2>Tu próxima compra empieza aquí</h2>
-            <p>Los mejores juegos. Envío en 24 horas</p>
+    <!--Ancho máximo, centrado con mx y padding-->
+    <main class="mx-auto max-w-5xl p-4">
+        <!--texto centrado y con padding vertical-->
+        <section class="py-10 text-center">
+            <!--tamaño de texto grande, en negrita y de color cian-->
+            <h2 class="text-3xl font-bold text-cyan-400">Tu próxima compra empieza aquí</h2>
+            <!--margen superior y color de texto gris-->
+            <p class="mt-2 text-gray-400">Los mejores juegos. Envío en 24 horas</p>
         </section>
         <section>
-            <h2>Juegos destacados</h2>
-            <div>
-                <article>
-                    <h3>Final Fantasy Revelation</h3>
-                    <p>Cloud y sus amigos viven el último tramo de la aventura</p>
-                    <p>89,99€</p>
-                    <button>Añadir al carrito</button>
+            <!--margen inferior, texto grande y en negrita-->
+            <h2 class="mb-4 text-2xl font-bold">Juegos destacados</h2>
+            <!--grid con hueco entre los juegos, md para pantallas medianas o grandes (en móvil una sola columna)-->
+            <div class="grid gap-4 md:grid-cols-3">
+                <!--esquinas redondeadas, color de fondo gris oscuro, padding y una línea morada alrededor-->
+                <article class="rounded-lg border border-purple-500 bg-gray-800 p-4">
+                    <!--texto xl, en negrita y de color lila-->
+                    <h3 class="text-xl font-bold text-purple-300">Final Fantasy Revelation</h3>
+                    <!--margin top y color de texto gris-->
+                    <p class="mt-2 text-gray-400">Cloud y sus amigos viven el último tramo de la aventura</p>
+                    <!--Margin top, texto xl, en negrita y el color del texto amarillo-->
+                    <p class="mt-2 text-xl font-bold text-yellow-400">89,99€</p>
+                    <!--Margin top, bordes redondeados, color de fondo morado, padding horizontal de 16px
+                    y vertical de 8px además de cambiar de tono al pasar el ratón por encima-->
+                    <button class="mt-2 rounded-lg bg-purple-600 px-4 py-2 hover:bg-purple-700">Añadir al carrito</button>
                 </article>
-                <article>
-                    <h3>Devil May Cry 5</h3>
-                    <p>Acompaña a Nero en una nueva aventura</p>
-                    <p>49,99€</p>
-                    <button>Añadir al carrito</button>
+                <!--Las demás tarjetas usan el mismo estilo-->
+                <article class="rounded-lg border border-purple-500 bg-gray-800 p-4">
+                    <h3 class="text-xl font-bold text-purple-300">Devil May Cry 5</h3>
+                    <p class="mt-2 text-gray-400">Acompaña a Nero en una nueva aventura</p>
+                    <p class="mt-2 text-xl font-bold text-yellow-400">49,99€</p>
+                    <button class="mt-2 rounded-lg bg-purple-600 px-4 py-2 hover:bg-purple-700">Añadir al carrito</button>
                 </article>
-                <article>
-                    <h3>Palworld</h3>
-                    <p>Vive una aventura parecida a Pokémon pero esclavizando Pals</p>
-                    <p>24,99€</p>
-                    <button>Añadir al carrito</button>
+                <article class="rounded-lg border border-purple-500 bg-gray-800 p-4">
+                    <h3 class="text-xl font-bold text-purple-300">Palworld</h3>
+                    <p class="mt-2 text-gray-400">Vive una aventura parecida a Pokémon pero esclavizando Pals</p>
+                    <p class="mt-2 text-xl font-bold text-yellow-400">24,99€</p>
+                    <button class="mt-2 rounded-lg bg-purple-600 px-4 py-2 hover:bg-purple-700">Añadir al carrito</button>
                 </article>
             </div>
         </section>
-        <section>
-            <h3>¡Ofertas del mes!</h3>
-            <p>Hasta un 30% de descuento en juegos de aventuras</p>
+        <!--Margin vertical, esquinas redondeadas, color de fondo morado, padding y texto centrado-->
+        <section class="my-6 rounded-lg bg-purple-600 p-6 text-center">
+            <!--Texto más grande y en negrita-->
+            <h3 class="text-xl font-bold">¡Ofertas del mes!</h3>
+            <!--margin top-->
+            <p class="mt-2">Hasta un 30% de descuento en juegos de aventuras</p>
         </section>
     </main>
-    <footer>
+    <!--color de fondo morado muy oscuro, padding, texto centrado y color de texto lila claro-->
+    <footer class="bg-purple-900 p-4 text-center text-purple-200">
         <p>Copyright GameStore 2026</p>
     </footer>
 </body>
